@@ -61,13 +61,12 @@ const tablercBase = function(){
         return out;
     }
     const renderLine = function(columns, e){
-        let out = elements.separator;
-        let line = 0;
+        let out = '';
+        let colum = 0;
         for (let i of columns) {
-            if ( line > 0)
-                out += elements.separator;
-            out += (i.padEnd(e[line].size, ' '));
-            line++;
+            out += elements.separator;
+            out += (i.padEnd(e[colum].size, ' '));
+            colum++;
         }
         out += elements.separator;
         return out;
