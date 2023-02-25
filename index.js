@@ -61,12 +61,11 @@ const tablercBase = function(){
         return out;
     }
     const renderLine = function(columns, e){
-        let out = '';
+        let out = elements.separator;
         for (let i in columns) {
-            out += elements.separator;
             out += (columns[i].padEnd(e[i].size, ' '));
+            out += elements.separator;
         }
-        out += elements.separator;
         return out;
 
     }
