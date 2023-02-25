@@ -50,11 +50,8 @@ const tablercBase = function(){
     }
     const renderBorder = function(size, elem){
         let out = elem.start + ('').padEnd(size[0].size, elem.line);
-        let line = 0;
         for (let i = 1 ; size.length > i ; i++ ) {
-            out += elem.middle;
-            out += (('').padEnd(size[i].size, elem.line));
-            line++;
+            out += elem.middle + (('').padEnd(size[i].size, elem.line));
         }
         out += elem.end;
         return out;
