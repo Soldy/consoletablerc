@@ -34,13 +34,12 @@ const tablercBase = function(){
     const calcSize = function(data){
         let columns = {};
         let out = [];
+        for (let i in data[0])
+            columns[i] = data[0][i].length;
         for (let i of data)
              for(let c in i)
-                 if(typeof columns[c] === 'undefined'){
+                 if(i[c].length > columns[c])
                      columns[c] = i[c].length;
-                 }else if(i[c].length > columns[c]){
-                     columns[c] = i[c].length;
-                 }
         for (let i in columns)
             out.push({
                 name : i,
