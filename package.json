@@ -1,0 +1,24 @@
+{
+  "name": "consoletablerc",
+  "version": "0.0.1",
+  "description": "console table",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Soldy/assertrc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nanoTest": ">=0.9.9-beta32"
+  },
+  "keywords": [],
+  "author": "Soldy <npmjs@gidigi.com> (http://gidigi.com)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Soldy/consoletablerc/issues"
+  },
+  "homepage": "https://github.com/Soldy/assertrc#readme"
+}
